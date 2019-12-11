@@ -166,58 +166,40 @@ header a {
   padding: 20px 0 0;
 }
 
-.btn {
-  width: 500px;
-  display: inline-block;
+.cv-button .btn {
+  width: 100%;
   padding: 10px 30px;
   cursor: pointer;
+  font-size: 18px;
   border: solid 3px #000000;
-}
-
-.cv-expand {
-  font-weight: bold;
-}
-
-.fa-chevron-down {
-  position: relative;
-  top: 0px;
-  right: 35px;
-}
-
-.active {
-  display: block;
+  background-color: #ffffff;
 }
 
 .cv-list {
-  display: block;
-  text-align: left;
   cursor: pointer;
   width: 900px;
   margin: 50px auto;
   padding-bottom: 0px;
 }
 
-.cv-item {
-  position: relative;
+.cv-button {
+  display: inline-block;
+  width: 30%;
+  padding: 10px 25px;
 }
 
 .cv-item h4 {
-  border-bottom: solid 1px #cccccc;  
-  font-weight: normal;
-}
-
-.cv-item span {
-  position: absolute;
-  top: 0px;
-  right: 10px; 
+  text-align: center;
+  font-size: 18px;
 }
 
 .cv-detail {
   display: block;
+  text-align: left;
 }
 
 .cv-detail p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* worksラッパー */

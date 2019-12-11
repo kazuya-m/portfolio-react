@@ -20,32 +20,24 @@ class Cv extends React.Component {
   }
 
   //クリックされた案件以外のopen状態をfalseにセット
-  // closeOtherCv(notClickedCv) {
-  //   notClickedCv.forEach(cv => {
-  //     cv.isOpen = false;
-  //   });
-  //   return notClickedCv;
-  // }
+   closeOtherCv(notClickedCv) {
+     notClickedCv.isOpen = false;
+     return notClickedCv;
+   }
 
   // クリックされた案件情報を抽出してsetState
   handleClickCv(clickedId) {
-    const clickedCv = this.props.cvList.find((cv) => {
+    const clickedCv = this.props.cvList.find((cv) => {     //クリックされた案件を抽出
       return cv.id === clickedId;
     })
-    const notClickedCv = this.props.cvList.find((cv) => {
+    const notClickedCv = this.props.cvList.find((cv) => {  //クリックされてない案件を抽出
       return cv.id !== clickedId;
     })
-    let setNotClickedCv = notClickedCv.map((cv) => {
-      cv.isOpen = false;
-      return cv;
-    })
-    let updatedCvList = clickedCv + setNotClickedCv;
+    this.closeOtherCv(notClickedCv);
+    this.setOpenState(clickedCv);
     this.setState({
-      cvList: updatedCvList,
-      cvItem: this.setOpenState(clickedCv)
+      cvList: clickedCv,
     });
-    console.log(this.state.cvList);
-    console.log(this.state.cvItem);
   }
 
   render() {
@@ -53,7 +45,7 @@ class Cv extends React.Component {
     if (this.state.cvList.isOpen === true) {
        cvDetail = (
          <div className="cv-detail">
-          <h4>{this.state.cvList.name}</h4>
+          <h4>No.{this.state.cvList.id} {this.state.cvList.name}</h4>
           <p>期間：{this.state.cvList.duration}</p>
           <p>詳細：{this.state.cvList.detail}</p>
           <p>スキル：{this.state.cvList.skills}</p>
@@ -62,16 +54,20 @@ class Cv extends React.Component {
     }
     return(
       <div className="cv-list">
-        <button className="btn" onClick={()=>{this.handleClickCv('01')}}>案件1</button>
-        <button className="btn" onClick={()=>{this.handleClickCv('02')}}>案件2</button>
-        <div className="cv-item">
-          <h4>{this.props.name}</h4>
-            <div className="cv-detail">
-              {cvDetail}
-            </div>
-          </div>
+        <h3>主な案件経歴はこちら</h3>
+        <div className="cv-button">
+          <button className="btn" onClick={()=>{this.handleClickCv('01')}}>案件詳細 1</button>
         </div>
-
+        <div className="cv-button">
+          <button className="btn" onClick={()=>{this.handleClickCv('02')}}>案件詳細 2</button>
+        </div>
+      <div className="cv-item">
+        <h4>{this.props.name}</h4>
+        <div className="cv-detail">
+          {cvDetail}
+        </div>
+      </div>
+    </div>
     )
   }
 }

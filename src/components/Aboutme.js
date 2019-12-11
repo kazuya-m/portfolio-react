@@ -19,7 +19,16 @@ class Aboutme extends React.Component {
         detail: '・設計書などをもとに、テストの計画や設計を実施<br />・計画や設計に準じた項目書の作成及び実施',
         skills: 'SVN/Redmine',
         isOpen: false
-      }];
+      },
+      {
+        id: '03',
+        name: 'ファイル転送ソフトのテスト',
+        duration: '2016/12~2019/09',
+        detail: '',
+        skills: 'Linux/VMWareWorkstation/Tomcat8/Squid/PostgreSQL',
+        isOpen: false
+      },];
+
     return(
       <div className="aboutme-wrapper" id="aboutme">
         <div className="container">
