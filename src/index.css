@@ -292,6 +292,12 @@ header a {
   box-shadow: 0 0 4px #070707;
 }
 
+/* contactラッパー */
+.contact-wrapper {
+  padding: 50px 0;
+  text-align: center;
+}
+
 /* フッター */
 footer {
   width: 100%;

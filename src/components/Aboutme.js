@@ -3,12 +3,13 @@ import Cv from './Cv.js'
 
 class Aboutme extends React.Component {
   render() {
+    const detail1 = '計書や不具合修正内容などをもとに、/nテストの計画や設計を実施'
     const cvList = [
       {
         id: '01',
         name: 'ファイル転送ソフトのテスト',
         duration: '2016/12~2019/09',
-        detail: '',
+        detail: detail1,
         skills: 'Linux/VMWareWorkstation/Tomcat8/Squid/PostgreSQL',
         isOpen: false
       },

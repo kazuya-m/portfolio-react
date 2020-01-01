@@ -3,6 +3,8 @@ import Header from './Header';
 import Top from './Top';
 import Introduction from './Introduction';
 import Aboutme from './Aboutme';
+import Works from './Works';
+import Contact from './Contact';
 
 class App extends React.Component{
   render() {
@@ -12,6 +14,8 @@ class App extends React.Component{
         <Top />
         <Introduction />
         <Aboutme />
+        <Works />
+        <Contact />
       </div>
     );
   }

@@ -39,12 +39,12 @@ class Cv extends React.Component {
       cvList: clickedCv,
     });
   }
-
+  
   render() {
     let cvDetail;
     if (this.state.cvList.isOpen === true) {
        cvDetail = (
-         <div className="cv-detail">
+         <div className="cv-detail" style={{whiteSpace: "pre-line"}}>
           <h4>No.{this.state.cvList.id} {this.state.cvList.name}</h4>
           <p>期間：{this.state.cvList.duration}</p>
           <p>詳細：{this.state.cvList.detail}</p>
@@ -63,7 +63,7 @@ class Cv extends React.Component {
         </div>
       <div className="cv-item">
         <h4>{this.props.name}</h4>
-        <div className="cv-detail">
+        <div className="cv-detail" style={{whiteSpace: "pre-line"}}>
           {cvDetail}
         </div>
       </div>
