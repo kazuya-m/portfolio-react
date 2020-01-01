@@ -17,7 +17,22 @@ class Contact extends React.Component {
           <div className="heading">
             <h2>Contact</h2>
           </div>
-          submit form area
+          <form>
+            <p>メールアドレス：</p>
+            <input
+              type="text"
+              name="email"
+               />
+            <p>お問い合わせ内容</p>
+            <textarea />
+            <input
+              type="submit"
+              name="submit-button"
+               />
+
+
+
+          </form>
         </div>
       </div>
     )

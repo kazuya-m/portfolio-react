@@ -298,6 +298,10 @@ header a {
   text-align: center;
 }
 
+.contact-wrapper input[type=submit] {
+  display: block;
+}
+
 /* フッター */
 footer {
   width: 100%;
