@@ -295,10 +295,16 @@ header a {
 /* contactラッパー */
 .contact-wrapper {
   padding: 50px 0;
+}
+
+.contact-form {
   text-align: center;
 }
 
-.contact-wrapper input[type=submit] {
+.contact-form input,
+.contact-form textarea {
+  width: 500px;
+  margin: 0 auto;
   display: block;
 }
 
