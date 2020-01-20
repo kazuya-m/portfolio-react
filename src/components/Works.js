@@ -33,7 +33,7 @@ class Works extends React.Component {
     ];
 
   return (
-    <div className='works-wrapper'>
+    <div className='works-wrapper' id="works">
       <div className='container'>
         <div className="heading">
           <h2 className="title">Works</h2>

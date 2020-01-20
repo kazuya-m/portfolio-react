@@ -12,7 +12,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="contact-wrapper">
+      <div className="contact-wrapper" id="contact">
         <div className="container">
           <div className="form-area">
             <div className="heading">
