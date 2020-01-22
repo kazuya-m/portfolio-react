@@ -25,7 +25,7 @@ class Cv extends React.Component {
      return notClickedCv;
    }
 
-  // クリックされた案件情報を抽出してsetState
+  //クリックされた案件情報を抽出してsetState
   handleClickCv(clickedId) {
     const clickedCv = this.props.cvList.find((cv) => {     //クリックされた案件を抽出
       return cv.id === clickedId;
@@ -35,6 +35,7 @@ class Cv extends React.Component {
     })
     this.closeOtherCv(notClickedCv);
     this.setOpenState(clickedCv);
+    //クリックされた案件情報を表示するためにリストに格納
     this.setState({
       cvList: clickedCv,
     });

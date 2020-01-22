@@ -236,7 +236,7 @@ header a {
  
 /* 成果物モーダル */
 .modal {
-  display: none;
+  display: block;
   max-width: 1170px;
   width: 100%;
   height: 500px;
@@ -334,7 +334,6 @@ header a {
   background-color: #ffffff;
   margin: 50px 0;
 }
-
 
 /* フッター */
 footer {
