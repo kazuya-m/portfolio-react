@@ -28,10 +28,9 @@ class Worksitems extends React.Component {
             </div>
             <div className="modal-box">
               <div className="modal-description">
-                <h3>ポートフォリオ</h3>
-                <p>このサイトです。<br />レスポンシブデザインに対応するよう製作しました。<br />
-                  モーダル、アコーディオンなどをjQueryで実装しました。<br />
-                </p>
+                <h3>{this.props.name}</h3>
+                <p>テスト。<br />
+                mapで説明渡す。</p>
                 <h3 className="languages">使用言語など</h3>
                 <p>HTML, CSS, jQuery</p>
               </div>

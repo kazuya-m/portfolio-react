@@ -1,6 +1,6 @@
 import React from 'react';
 import Workitems from './Workitems';
-import Portfolio from '../img/works-cs.jpg';
+import Portfolio from './img/works-cs.jpg';
 
 
 class Works extends React.Component {
