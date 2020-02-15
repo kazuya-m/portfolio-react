@@ -1,6 +1,6 @@
 import React from 'react';
 import Workitems from './Workitems';
-import Portfolio from './img/works-cs.jpg';
+//import Portfolio from '../img/works-cs.jpg';
 
 
 class Works extends React.Component {
@@ -9,7 +9,7 @@ class Works extends React.Component {
       {
         id: '01',
         name: 'ポートフォリオ',
-        img: {Portfolio},
+        img: '../img/portfolio.jpg',
         isOpen: false
       },
       {

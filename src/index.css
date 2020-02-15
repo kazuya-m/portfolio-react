@@ -299,40 +299,67 @@ header a {
   background-color: #f7f7f7;
 }
 
-.form-area {
-  text-align: center;
-}
-
 .contact-form {
   background-color: #ffffff;
   border-radius: 1px;
   width: 100%;
   margin: 50px 0;
   box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
-  padding: 20px 0 50px;
+  padding: 50px 0 50px;
 }
 
-.contact-form textarea {
+.form-box {
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-box > li {
+  padding: 20px 0px;
+}
+
+.label-item {
+  flex: 30%;
+  text-align: center;
+}
+
+.input-item {
+  width: 70%;
+  text-align: start;
+}
+
+input#email {
+  width: 250px;
+  height: 20px;
+  border: solid 1px #000000;
+}
+
+textarea#text {
   width: 500px;
   height: 100px;
-  margin: 0 auto;
-  display: block;
+  border: solid 1px #000000;
 }
 
-.contact-form input[name="email"] {
-  width: 200px;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-.contact-form input[name="submit-button"] {
+input#submit {
   width: 300px;
   padding: 10px 30px;
   cursor: pointer;
   font-size: 16px;
   border: solid 3px #000000;
   background-color: #ffffff;
-  margin: 50px 0;
+}
+
+.err-msg {
+  color: crimson;
+  font-size: 10px;
+}
+
+.submitted {
+  padding: 50px 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* フッター */

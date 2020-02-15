@@ -8,7 +8,7 @@ class Worksitems extends React.Component {
 
   handleClickWorks(){
     this.setState({isModalOpen: true});
-    console.log(this.state.isModalOpen);
+    
   }
 
   handleClickClose(){
@@ -20,7 +20,6 @@ class Worksitems extends React.Component {
     if (this.state.isModalOpen) {
       modal = (
         <div className="modal" id="portfolio-modal">
-          <div className="modal-container">
             <div className="close-modal">
               <i 
                 className="fas fa-times-circle fa-2x close"
@@ -38,7 +37,6 @@ class Worksitems extends React.Component {
                 <img src="img/portfolio.jpg" alt="test" />
               </div>
             </div>
-          </div>
         </div>
       )
     }

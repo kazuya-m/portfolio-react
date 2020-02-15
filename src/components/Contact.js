@@ -42,13 +42,21 @@ class Contact extends React.Component {
     let textErrorMsg;
     if (this.state.hasEmailError) {
       emailErrorMsg = (
-        <p>正しいメールアドレスを入力してください</p>
+        <p className="err-msg">正しいメールアドレスを入力してください</p>
       )
     } else if (this.state.hasTextError) {
       textErrorMsg = (
-        <p>お問い合わせ内容を入力してください</p>
+        <p className="err-msg">お問い合わせ内容を入力してください</p>
+      )
+    } else if (this.state.hasEmailError && this.state.hasTextError) {
+      emailErrorMsg = (
+        <p className="err-msg">正しいメールアドレスを入力してください</p>
+      )
+      textErrorMsg = (
+        <p className="err-msg">お問い合わせ内容を入力してください</p>
       )
     }
+
     let contactForm
     if (!this.state.isSubmitted) {
       contactForm = (
@@ -58,33 +66,55 @@ class Contact extends React.Component {
           </div>
           <div className="contact-form">
             <form onSubmit={()=>{this.handleSubmit()}}>
-              <p>メールアドレス：</p>
-              {emailErrorMsg}
-              <input 
-                type="text"
-                name="email"
-                value={this.state.email}
-                onChange={(emailInput)=>{this.handleEmailChange(emailInput)}}
-               />
-              <p>お問い合わせ内容</p>
-              {textErrorMsg}
-              <textarea
-                value={this.state.text}
-                onChange={(textInput)=>{this.handleTextChange(textInput)}}
-               />
-              <input
-                type="submit"
-                name="submit-button"
-                value="送信(実際には何も送信されません)"
-              />
+              <ul className="form-box">
+                <li className="label-item">
+                  <label for="email">メールアドレス</label>
+                  {emailErrorMsg}
+                </li>
+                <li className="input-item">
+                  <input 
+                    type="text"
+                    name="email"
+                    id="email"
+                    value={this.state.email}
+                    onChange={(emailInput)=>{this.handleEmailChange(emailInput)}}
+                    />
+                </li>
+                <li className="label-item">
+                  <label for="text">お問い合わせ内容</label>
+                  {textErrorMsg}
+                </li>
+                <li className="input-item">
+                  <textarea
+                    id="text"
+                    value={this.state.text}
+                    onChange={(textInput)=>{this.handleTextChange(textInput)}}
+                    />
+                </li>
+                <li className="submit-item">
+                  <input
+                    type="submit"
+                    name="submit-button"
+                    id="submit"
+                    value="送信(実際には何も送信されません)"
+                    />
+                </li>
+              </ul>
             </form>
           </div>
         </div>
       );
     } else {
       contactForm = (
-        <div className="submitted">
-          送信完了 (実際には何も送信されていません)
+        <div className="form-area">
+          <div className="heading">
+            <h2>Contact</h2>
+          </div>
+          <div className="contact-form">
+            <div className="submitted">
+              送信完了！ (実際には何も送信されていません)
+            </div>
+          </div>
         </div>
       )
     }
