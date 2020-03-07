@@ -53,11 +53,11 @@ body {
     padding: 200px 0 200px;
     background-image: url("../src/img/top_photo.jpeg");
     background-size: cover;
-    background-position: 50% 50%;
     color: white;
     text-align: center;
     background-position: center;
     margin-top: 65px;
+    height: 80vh;
   }
   
   .top-wrapper h1 {
