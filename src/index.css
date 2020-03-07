@@ -1,78 +1,118 @@
+html {
+  scroll-behavior:smooth;
+}
+
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
 }
 
-a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  
+  /* ヘッダー */
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    padding: 20px 0 0 0;
+  }
+  
+  header a {
+    color: #000000;
+  }
+  
+  .menu {
+    margin: 0 50px 0 0;
+  }
+  
+  /* トップラッパー */
+  .top-wrapper {
+    padding: 200px 0 200px;
+    background-image: url("../src/img/top_photo.jpeg");
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    text-align: center;
+    background-position: center;
+    margin-top: 65px;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 1;
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.9;
+  }
+  
+  #hello {
+    animation-name: fadein-hello;
+    animation-duration: 2s;
 }
+  
+  #myname {
+    animation-name: fadein-myname;
+    animation-duration: 2s;
+  }
 
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+  @keyframes fadein-hello {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-/* ヘッダー */
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000000;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
+  @keyframes fadein-myname {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-.header-left {
-  float: left;
-}
 
-.header-right {
-  float: right;
-  padding: 20px 0 0 0;
-}
-
-header a {
-  color: #000000;
-}
-
-.menu {
-  margin: 0 50px 0 0;
-}
-
-/* トップラッパー */
-.top-wrapper {
-  padding: 300px 0 300px;
-  background-image: url("../src/img/top_photo.jpeg");
-  background-size: cover;
-  background-position: 50% 50%;
-  color: white;
-  text-align: center;
-  background-position: center;
-  margin-top: 65px;
-}
-
-.top-wrapper h1 {
-  opacity: 1;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.9;
-}
-
-/* introductionラッパー */
-.introduction-wrapper {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.introduction-wrapper img {
-  width: 200px;
+  /* introductionラッパー */
+  .introduction-wrapper {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .introduction-wrapper img {
+    width: 200px;
   height: auto;
 }
 

@@ -6,7 +6,7 @@ class Header extends React.Component {
       <header>
         <div className="container">
           <div className="header-left">
-            <h2>Kazuya Matuso</h2>
+            <a href="#top"><h2>Kazuya Matuso</h2></a>
           </div>
           <div className="header-right">
             <a href="#introduction" className="menu">Introduction</a>

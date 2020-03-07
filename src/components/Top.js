@@ -5,8 +5,8 @@ class Top extends React.Component {
     return (
       <div className="top-wrapper"> 
         <div className="container">
-          <h1>HELLO WORLD.</h1>
-          <h1>I'M KAZUYA MATSUO</h1>
+          <h1 id="hello">HELLO WORLD.</h1>
+          <h1 id="myname">I'M KAZUYA MATSUO</h1>
         </div>
       </div>
     )
