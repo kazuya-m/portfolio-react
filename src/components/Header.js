@@ -13,11 +13,10 @@ import Contact from './Contact';
         <header>
           <div className="container">
             <div className="header-left">
-              <a href="#top"><h2>Kazuya Matuso</h2></a>
+            <Link to='/'><h2>Kazuya Matuso</h2></Link>
             </div>
             <div className="header-right">
               <ul id="menu">
-                <li><Link to='/'>Home</Link></li>
                 <li><Link to='/Introduction'>Introduction</Link></li>
                 <li><Link to='/Aboutme'>About Me</Link></li>
                 <li><Link to='/Works'>Works</Link></li>

@@ -33,9 +33,6 @@ class Aboutme extends React.Component {
     return(
       <div className="aboutme-wrapper" id="aboutme">
         <div className="container">
-          <div className="heading">
-            <h2 className="title">About Me</h2>
-          </div>
           <div className="profile-area">
             <div className="profile">
               <div className="profile icon">
