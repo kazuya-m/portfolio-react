@@ -32,27 +32,6 @@ import Contact from './Contact';
           <Route path='/Works' component={Works} />
           <Route path='/Contact' component={Contact} />
     </Router>
-        // <header>
-        //   <div className="container">
-        //     <div className="header-left">
-        //       <a href="#top"><h2>Kazuya Matuso</h2></a>
-        //     </div>
-        //     <div style={{width: '500px', textAlign: 'left'}}>
-        //       <ul style={{display: 'flex'}}>
-        //         <li style={liStyle}>Introduction</li>
-        //         <li style={liStyle}>About Me</li>
-        //         <li style={liStyle}>Works</li>
-        //         <li style={liStyle}>Contact</li>
-        //       </ul>
-        //     {/* <div className="header-right">
-        //       <a href="#introduction" className="menu">Introduction</a>
-        //       <a href="#aboutme" className="menu">About Me</a>
-        //       <a href="#works" className="menu">Works</a>
-        //       <a href="#contact" className="menu">Contact</a>
-        //       <a href="https://github.com/kazuya-m" alt="github" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-2x"></i></a> */}
-        //   </div>
-        //   </div>
-        // </header>
     )
    }
 }
