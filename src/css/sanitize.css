@@ -77,8 +77,12 @@ dl ul,
 ol dl,
 ul dl {
   margin: 0;
+  padding: 0;
 }
-
+ul {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
 /**
  * Remove the margin on nested lists in Edge 18- and IE.
  */
@@ -88,6 +92,7 @@ ol ul,
 ul ol,
 ul ul {
   margin: 0;
+  padding: 0;
 }
 
 /**

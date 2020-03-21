@@ -18,8 +18,8 @@ a {
 
 ul {
   list-style: none;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  /* padding: 0 0 0 0;
+  margin: 0 0 0 0; */
 }
 
 .container {
@@ -256,7 +256,6 @@ ul#skill-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 0 0 0;
 }
 
 ul#skill-list > li {
