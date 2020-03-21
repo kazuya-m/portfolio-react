@@ -19,7 +19,7 @@ class Aboutme extends React.Component {
               </ul>
               <div className="content-area">
                 <Route exact path='/Aboutme' component={Profile} />
-                <Route path='/Skills' component={Skills} />
+                <Route exact path='/Skills' component={Skills} />
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ class Works extends React.Component {
     <div className='works-wrapper' id="works">
       <div className='container'>
         <div className="heading">
-          <h2 className="title">Works</h2>
+          <h2>Works</h2>
         </div>
         <div className="works-box">
           {workList.map((worksItem) => {

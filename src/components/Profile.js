@@ -42,7 +42,7 @@ class Profile extends React.Component {
                   たくさんのユーザーに使われるサービスや製品を開発したいという思いでIT業界に入り4年目です。<br />
                   <br />
                   このポートフォリオサイトもその一環で作成しました。<br />
-                  主に勉強している言語など：HTML/CSS/JavaScript/Reacrt/jQuery/PHP/Java</p>
+                  主に勉強している言語など：HTML/CSS/JavaScript/React/jQuery/</p>
               </div>
             </div>
             <div className="cv">

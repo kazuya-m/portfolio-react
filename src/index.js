@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/sanitize.css'
+import './css/sanitize.css';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './components/serviceWorker';
