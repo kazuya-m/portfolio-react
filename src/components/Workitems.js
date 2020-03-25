@@ -26,14 +26,19 @@ class Worksitems extends React.Component {
                 onClick={() => {this.handleClickClose()}}></i>
             </div>
             <div className="modal-box">
-              <div className="modal-description">
+              <div className="modal-title align-center">
                 <h3>{this.props.name}</h3>
-                <p>テスト。<br />
-                mapで説明渡す。</p>
-                <h3 className="languages">使用言語など</h3>
-                <p>HTML, CSS, jQuery</p>
               </div>
-              <div className="modal-photo">
+              <div className="modal-description">
+                <p>{this.props.description}</p>
+              </div>
+              <div className="modal-skills">
+                <p>{this.props.skills}</p>
+              </div>
+              <div className="modal-link">
+                <p>URL git</p>
+              </div>
+              <div className="modal-photo align-center">
                 <img src="img/portfolio.jpg" alt="test" />
               </div>
             </div>
@@ -46,7 +51,7 @@ class Worksitems extends React.Component {
          className='works-cards'
          onClick={() => {this.handleClickWorks()}}>
           <img src={this.props.img} alt="a" />
-          <p>{this.props.id}{this.props.name}</p>
+          <p>{this.props.name}</p>
         </div>
         {modal}
      </div>

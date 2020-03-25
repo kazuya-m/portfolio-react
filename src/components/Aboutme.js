@@ -15,11 +15,11 @@ class Aboutme extends React.Component {
             <div className="profile-area">
               <ul id="aboutme-tab">
                 <li><Link to='/Aboutme'><p>Profile</p></Link></li>
-                <li><Link to='/Skills'><p>Skills</p></Link></li>
+                <li><Link to='/Aboutme/Skills'><p>Skills</p></Link></li>
               </ul>
               <div className="content-area">
                 <Route exact path='/Aboutme' component={Profile} />
-                <Route exact path='/Skills' component={Skills} />
+                <Route exact path='/Aboutme/Skills' component={Skills} />
               </div>
             </div>
           </div>

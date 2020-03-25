@@ -324,21 +324,39 @@ ul#skill-list > li {
 }
 
 .modal-box {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 35% 1fr;
+  text-align: left;
+}
+
+.modal-title {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
 .modal-description {
-  width: 35%;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.modal-skills {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.modal-info {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
 }
 
 .modal-photo {
-  text-align: center;
-  width: 65%;
+  grid-row: 1 / 5;
+  grid-column: 2 / 3;
 }
 
-.modal-description p {
-  font-size: 14px;
+.align-center {
+  text-align: center;
 }
 
 .languages {
@@ -347,7 +365,7 @@ ul#skill-list > li {
 
 .modal-photo {
   padding: 20px 0;
-  align-content: center;
+  align-items: center;
 }
 
 .modal-photo img {

@@ -9,24 +9,32 @@ class Works extends React.Component {
       {
         id: '01',
         name: 'ポートフォリオ',
+        description: '自分の経歴やスキルをまとめたポートフォリオサイトです。jQueryを使用してモーダルやアコーディオンを実装することで動きのあるサイトにしました。',
+        skills: 'HTML/CSS/React/AWS',
         img: '../img/portfolio.jpg',
         isOpen: false
       },
       {
         id: '02',
-        name: 'ポートフォリオ(React + AWS)',
+        name: 'ポートフォリオ React + AWS',
+        description: '自分の経歴やスキルをまとめたポートフォリオサイトです。Reactを使用し、環境面はAWSで整備しました。SPA化するためにreact-routerライブラリを使用し、メニューをクリックすると差分だけレンダリングするようにしています。',
+        skills: 'HTML/CSS/React/AWS',
         img: '../img/works-cs.jpg',
         isOpen: false
       },
       {
         id: '03',
         name: '...',
+        description: '',
+        skills: 'HTML/CSS/React/AWS',
         img: '../img/works-cs.jpg',
         isOpen: false
       },
       {
         id: '04',
         name: '...',
+        description: '',
+        skills: 'HTML/CSS/React/AWS',
         img: '../img/works-cs.jpg',
         isOpen: false
       },
@@ -44,6 +52,8 @@ class Works extends React.Component {
               <Workitems
                 id={worksItem.id}
                 name={worksItem.name}
+                description={worksItem.description}
+                skills={worksItem.skills}
                 img={worksItem.img}
               />
             );}
