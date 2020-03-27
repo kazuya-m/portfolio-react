@@ -41,12 +41,12 @@ class Works extends React.Component {
     ];
 
   return (
-    <div className='works-wrapper' id="works">
+    <div className='works-wrapper wrapper' id="works">
       <div className='container'>
         <div className="heading">
           <h2>Works</h2>
         </div>
-        <div className="works-box">
+        <div className="works-box content">
           {workList.map((worksItem) => {
             return(
               <Workitems

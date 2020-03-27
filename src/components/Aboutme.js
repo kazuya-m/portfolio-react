@@ -7,7 +7,7 @@ class Aboutme extends React.Component {
   render() {
     return(
       <Router>
-        <div className="aboutme-wrapper">
+        <div className="aboutme-wrapper wrapper">
           <div className="container">
             <div className="heading">
               <h2>About Me</h2>

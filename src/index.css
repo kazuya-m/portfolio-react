@@ -30,6 +30,14 @@ ul {
   box-sizing: border-box;
 }
 
+.wrapper {
+  margin-top: 100px;
+}
+
+.content {
+  margin: 30px 0 0 0;
+}
+
 .heading {
   margin: 50px 0 0 0;
 }
@@ -126,10 +134,8 @@ ul#menu {
   }
 }
 
-
 /* introductionラッパー */
 .introduction-wrapper {
-  padding: 50px 0;
   text-align: center;
 }
 
@@ -138,38 +144,10 @@ ul#menu {
   height: auto;
 }
 
-.device-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px 0;
-}
-
-.device-item {
-  width: 50%;
-}
-
-.device-item p {
-  font-size: 16px;
-}
-
-.device-logo {
-  font-size: 100px;
-}
-
-.tab .now-showing {
-  display: none;
-}
-
-.sp .now-showing {
-  display: none;
-}
-
 /* aboutmeラッパー */
 .aboutme-wrapper {
   background-color: #fff;
   text-align: center;
-  padding: 50px 0 50px;
 }
 
 .profile-area {
@@ -268,7 +246,6 @@ ul#skill-list > li {
 
 /* worksラッパー */
 .works-wrapper {
-  margin: 70px 0 50px;
   text-align: center;
 }
 
@@ -376,7 +353,6 @@ ul#skill-list > li {
 
 /* contactラッパー */
 .contact-wrapper {
-  padding: 50px 0;
   text-align: center;
   background-color: #ffffff;
 }

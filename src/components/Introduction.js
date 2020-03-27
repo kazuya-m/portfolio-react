@@ -4,7 +4,7 @@ import logo from '../img/react-logo.png';
 class Introduction extends React.Component {
   render() {
     return(
-      <div className="introduction-wrapper">
+      <div className="introduction-wrapper wrapper">
         <div className="container">
           <div className="heading">
             <h2>Introduction</h2>

@@ -119,7 +119,7 @@ class Contact extends React.Component {
       )
     }
     return (
-      <div className="contact-wrapper" id="contact">
+      <div className="contact-wrapper wrapper" id="contact">
         <div className="container">
           {contactForm}
         </div>
