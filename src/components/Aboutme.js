@@ -14,8 +14,8 @@ class Aboutme extends React.Component {
             </div>
             <div className="profile-area">
               <ul id="aboutme-tab">
-                <li><Link to='/Aboutme'><p>Profile</p></Link></li>
-                <li><Link to='/Aboutme/Skills'><p>Skills</p></Link></li>
+                <li><Link to='/Aboutme'>Profile</Link></li>
+                <li><Link to='/Aboutme/Skills'>Skills</Link></li>
               </ul>
               <div className="content-area">
                 <Route exact path='/Aboutme' component={Profile} />
