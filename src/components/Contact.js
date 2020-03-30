@@ -64,7 +64,7 @@ class Contact extends React.Component {
           <div className="heading">
             <h2>Contact</h2>
           </div>
-          <div className="contact-form">
+          <div className="contact-form card content">
             <form onSubmit={()=>{this.handleSubmit()}}>
               <ul className="form-box">
                 <li className="label-item">

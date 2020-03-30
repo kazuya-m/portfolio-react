@@ -35,11 +35,15 @@ ul {
 }
 
 .content {
-  margin: 30px 0 0 0;
+  margin: 45px 0 0 0;
 }
 
 .heading {
   margin: 50px 0 0 0;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
 }
 
 /* ヘッダー */
@@ -185,11 +189,11 @@ ul#aboutme-tab > .active {
 
 .profile {
   display: flex;
-  padding: 10px 20px;
+  padding: 20px 20px;
   justify-content: center;
 }
 
-.icon {
+.profile-icon {
   width: 20%;
   margin: auto 0;
   text-align: center;
@@ -209,7 +213,7 @@ ul#aboutme-tab > .active {
 .cv {
   width: 100%;
   text-align: center;
-  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .cv-button .btn {
@@ -260,7 +264,7 @@ ul#skill-list > li {
   margin: 0 10px 50px 10px;
   padding: 20px 0;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(80, 80, 80, 0.2);
+  box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
 }
 
 /* worksラッパー */
@@ -380,8 +384,6 @@ ul#skill-list > li {
   background-color: #ffffff;
   border-radius: 1px;
   width: 100%;
-  margin: 50px 0;
-  box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
   padding: 50px 0 50px;
 }
 

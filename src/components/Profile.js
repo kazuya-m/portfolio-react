@@ -33,7 +33,7 @@ class Profile extends React.Component {
     return(
         <div className="aboutme-wrapper">
           <div className="container">
-            <div className="profile">
+            <div className="profile card content">
               <div className="profile icon">
                 <i className="fas fa-user-graduate"></i>
               </div>
@@ -45,7 +45,7 @@ class Profile extends React.Component {
                   主に勉強している言語など：HTML/CSS/JavaScript/React/jQuery/</p>
               </div>
             </div>
-            <div className="cv">
+            <div className="cv content card">
               <Cv　cvList={cvList} />
             </div>
             </div>
