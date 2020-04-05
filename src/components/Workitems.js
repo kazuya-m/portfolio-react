@@ -22,7 +22,7 @@ class Worksitems extends React.Component {
         <div className="modal" id="portfolio-modal">
             <div className="close-modal">
               <i 
-                className="fas fa-times-circle fa-2x close"
+                className="far fa-window-close fa-2x close-btn"
                 onClick={() => {this.handleClickClose()}}></i>
             </div>
             <div className="modal-box">

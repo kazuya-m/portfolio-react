@@ -4,7 +4,36 @@ import Profile from './Profile';
 import {BrowserRouter as Router, Link, Route,} from "react-router-dom";
 
 class Aboutme extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isProfileActive: true,
+      isSkillsActive: false
+    };
+  }
+  
+  handleProfileClickedTab = () => {
+    if (!this.state.isProfileActive) { 
+      this.setState({isProfileActive: true});
+      this.setState({isSkillsActive: false});
+    }
+  }
+
+  handleClickedSkillsTab = () => {
+    if (!this.state.isSkillsActive) { 
+      this.setState({isProfileActive: false});
+      this.setState({isSkillsActive: true});
+    }
+  }
+    
   render() {
+    let profileActive;
+    let skillsActive;
+    if (this.state.isProfileActive) {
+      profileActive = "active";
+    } else if (this.state.isSkillsActive) {
+      skillsActive = "active";
+    }
     return(
       <Router>
         <div className="aboutme-wrapper wrapper">
@@ -14,8 +43,15 @@ class Aboutme extends React.Component {
             </div>
             <div className="profile-area">
               <ul id="aboutme-tab">
-                <li className="active" ><Link to='/Aboutme'><p>Profile</p></Link></li>
-                <li><Link to='/Aboutme/Skills'><p>Skills</p></Link></li>
+                <li 
+                  onClick={this.handleProfileClickedTab} 
+                  className={profileActive}>
+                  <Link to='/Aboutme'>Profile</Link>
+                </li>
+                <li 
+                  onClick={this.handleClickedSkillsTab} 
+                  className={skillsActive}>
+                  <Link to='/Aboutme/Skills'>Skills</Link></li>
               </ul>
               <div className="content-area">
                 <Route exact path='/Aboutme' component={Profile} />

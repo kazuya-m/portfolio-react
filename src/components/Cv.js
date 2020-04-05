@@ -55,7 +55,6 @@ class Cv extends React.Component {
     }
     return(
       <div className="cv-list">
-        <h3>主な案件経歴はこちら</h3>
         <div className="cv-button">
           <button className="btn" onClick={()=>{this.handleClickCv('01')}}>案件詳細 1</button>
         </div>

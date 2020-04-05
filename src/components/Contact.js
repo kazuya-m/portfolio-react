@@ -12,7 +12,7 @@ class Contact extends React.Component {
     };
   }
   
-  handleEmailChange(emailInput) {
+  handleEmailChange = emailInput => {
     let inputValue = emailInput.target.value;
     this.setState({email: inputValue});
     if ((inputValue.length >= 8 && !inputValue.includes('@')) || inputValue.length === 0) {
@@ -22,7 +22,7 @@ class Contact extends React.Component {
     }
   }
   
-  handleTextChange(textInput) {
+  handleTextChange = textInput => {
     let inputValue = textInput.target.value;
     let isEmpty = inputValue === '';
     this.setState({
@@ -31,7 +31,7 @@ class Contact extends React.Component {
     });
   }
 
-  handleSubmit(){
+  handleSubmit = () => {
     if (!this.state.hasEmailError && !this.state.hasTextError) {
       this.setState({isSubmitted: true});
     }
