@@ -10,7 +10,7 @@ class Cv extends React.Component {
   }
 
   //クリックされた案件のopen or closeをset
-  setOpenState(clickedCv) {
+  setOpenState = clickedCv => {
     if (clickedCv.isOpen === false) {
       clickedCv.isOpen = true;
     } else {
@@ -20,13 +20,13 @@ class Cv extends React.Component {
   }
 
   //クリックされた案件以外のopen状態をfalseにセット
-   closeOtherCv(notClickedCv) {
+   closeOtherCv = notClickedCv => {
      notClickedCv.isOpen = false;
      return notClickedCv;
    }
 
   //クリックされた案件情報を抽出してsetState
-  handleClickCv(clickedId) {
+  handleClickCv =clickedId => {
     const clickedCv = this.props.cvList.find((cv) => {     //クリックされた案件を抽出
       return cv.id === clickedId;
     })

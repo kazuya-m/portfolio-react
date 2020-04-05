@@ -16,6 +16,7 @@ a {
   text-decoration: none;
   width: 100%;
   height: 100%;
+  color: #000000;
 }
 
 ul {
@@ -59,6 +60,10 @@ header {
   z-index: 10;
 }
 
+header a:hover{
+  opacity: 0.6;
+}
+
 .header-left {
   float: left;
 }
@@ -68,9 +73,10 @@ header {
   padding: 5px 0 0 0;
 }
 
-a {
+header a {
   color: #000000;
 }
+
 
 ul#menu {
   display: flex;
@@ -149,6 +155,7 @@ ul#menu {
 .aboutme-wrapper {
   background-color: #ffffff;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .profile-area {
@@ -163,6 +170,7 @@ ul#aboutme-tab {
   justify-content: space-around;
   /* border-top: solid 1px gray; */
 }
+
 ul#aboutme-tab a {
   display: block;
   height: 100%;
@@ -175,15 +183,17 @@ ul#aboutme-tab > li {
   border-bottom: solid 1px #ffffff;
   cursor: pointer;
   height: 100%;
+  font-size: 18px;
 }
 
 ul#aboutme-tab > li:hover {
   color: #000000;
-  border-bottom: solid 1px gray;
+  opacity: 0.6;
 }
 
 ul#aboutme-tab > .active {
   border-bottom: solid 1px gray;
+  transition: 1s;
 }
 
 .profile {
@@ -426,8 +436,12 @@ input#submit {
   padding: 10px 30px;
   cursor: pointer;
   font-size: 16px;
-  border: solid 3px #000000;
+  border: solid 1px #000000;
   background-color: #ffffff;
+}
+
+input#submit:hover {
+  opacity: 0.6;
 }
 
 .err-msg {
