@@ -34,16 +34,23 @@ class Profile extends React.Component {
       <div className="aboutme-wrapper">
         <div className="container">
           <div className="profile card content">
-            <div className="profile icon">
+            <div className="profile-icon">
               <i className="fas fa-user-graduate"></i>
             </div>
-            <div className="profile description">
+            <div className="description">
               <p>こんにちは。マツオ カズヤと申します。<br />
-                フロントエンドエンジニアを目指してIT業界に入り、現在4年目の28歳です。<br />
+                Webフロントエンドエンジニアを目指してIT業界に入り、現在4年目の28歳です。<br />
                 主にテスト案件を担当していましたが、2020年からは開発・改修に携わる案件に参画しています。<br />
-                自己学習はモダンフロントエンドを中心に行っており、このポートフォリオサイトもその一環で作成しました。<br />
+                自己学習はモダンフロントエンドを中心に行っており、<a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">フロントエンドロードマップ <i class="fas fa-external-link-alt"></i></a> を参考にしています。<br />
+                このポートフォリオサイトも学習の一環で作成しました。<br />
                 他の成果物もこのサイトやgithub上で公開しています。
               </p>
+            </div>
+            <div className="links">
+              <h4>Links</h4>
+            </div>
+            <div className="links-item-title">
+              <p>GitHub : <a href="https://github.com/kazuya-m" target="_blank" rel="noopener noreferrer">https://github.com/kazuya-m</a></p>
             </div>
           </div>
         </div>
