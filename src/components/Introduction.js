@@ -7,7 +7,7 @@ class Introduction extends React.Component {
       <div className="introduction-wrapper wrapper">
         <div className="container">
           <div className="heading">
-            <h2>Introduction</h2>
+            <h2>About This Site</h2>
             <img src={logo} alt="react-logo" />
           </div>
          </div>

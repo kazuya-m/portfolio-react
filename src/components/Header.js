@@ -17,7 +17,7 @@ import Contact from './Contact';
             </div>
             <div className="header-right">
               <ul id="menu">
-                <li><Link to='/Introduction'>Introduction</Link></li>
+                <li><Link to='/Introduction'>About This Site</Link></li>
                 <li><Link to='/Aboutme'>About Me</Link></li>
                 <li><Link to='/Works'>Works</Link></li>
                 <li><Link to='/Contact'>Contact</Link></li>

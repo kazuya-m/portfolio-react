@@ -19,7 +19,7 @@ class Worksitems extends React.Component {
     let modal;
     if (this.state.isModalOpen) {
       modal = (
-        <div className="modal" id="portfolio-modal">
+        <div className="modal card" id="portfolio-modal">
             <div className="close-modal">
               <i 
                 className="far fa-window-close fa-2x close-btn"
@@ -36,7 +36,7 @@ class Worksitems extends React.Component {
                 <p>{this.props.skills}</p>
               </div>
               <div className="modal-link">
-                <p>URL git</p>
+                <a href={this.props.url}><p>{this.props.url}</p></a>
               </div>
               <div className="modal-photo align-center">
                 <img src="img/portfolio.jpg" alt="test" />
