@@ -114,14 +114,14 @@ ul#menu {
 }
 
 #hello {
-  animation-name: fadein-hello;
+  animation: fadein-hello 2s liner;
   animation-duration: 2s;
 }
 
 #myname {
   animation-name: fadein-myname;
   animation-duration: 2s;
-  animation-delay: 2s;
+  animation: example 5s ease 5s 1 forwards;
 }
 
 @keyframes fadein-hello {
@@ -369,6 +369,10 @@ ul#skill-list > li {
   grid-column: 1 / 2;
 }
 
+.modal-description p {
+  margin: 0;
+}
+
 .modal-skills {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
@@ -403,6 +407,8 @@ ul#skill-list > li {
   width: 700px;
   height: auto;
   box-shadow: 0 0 4px #070707;
+  display: block;
+  margin: 0 auto;
 }
 
 /* contactラッパー */
