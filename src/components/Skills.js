@@ -1,54 +1,25 @@
 import React from 'react';
+import Icon from './Icon.js';
 
 class Skills extends React.Component {
   render() {
+    let skillCard = this.props.skillList.map(skill =>
+      <li key={skill.id}>
+        <Icon id={skill.id} />
+        <p>{skill.name}</p>
+        <p>{skill.exp}</p>
+      </li>
+    );
+    console.log(skillCard);
     return(
       <div className="skills content">
-        <ul id="skill-list">
-          <li>
-            <i className="fab fa-html5 fa-5x" style={{color: 'rgba(211, 87, 54)'}}></i>
-            <p>HTML</p>
-            <p>業務経験 / 自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-css3-alt fa-5x" style={{color: 'rgba(50, 114, 177)'}}></i>
-            <p>CSS</p>
-            <p>業務経験 / 自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-js-square fa-5x" style={{color: 'rgba(250, 216, 93)'}}></i>
-            <p>JavaScript</p>
-            <p>業務経験 / 自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-react fa-5x" style={{color: 'rgba(97, 214, 251)'}}></i>
-            <p>React</p>
-            <p>自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-jquery"></i>
-            <p>jQuery</p>
-            <p>業務経験 / 自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-github-square fa-5x"></i>
-            <p>GitHub</p>
-            <p>自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-aws fa-5x" style={{color: 'rgba(227, 153, 55)'}}></i>
-            <p>AWS</p>
-            <p>自己学習</p>
-          </li>
-          <li>
-            <i className="fab fa-linux fa-5x"></i>
-            <p>Linux</p>
-            <p>業務経験 / 自己学習</p>
-          </li>
-        </ul>
-      </div>
-    )
+      <ul id="skill-list">
+        {skillCard}
+      </ul>
+    </div>
+    );
   }
 }
+
 
 export default Skills;

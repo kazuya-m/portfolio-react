@@ -294,6 +294,11 @@ ul#skill-list > li {
   box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
 }
 
+.skill-icon svg{
+  width: 80px;
+  height: 80px;
+}
+
 /* worksラッパー */
 .works-wrapper {
   text-align: center;
