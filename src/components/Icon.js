@@ -60,9 +60,9 @@ class Icon extends React.Component {
         break;
     }
     return (
-      <div className="skill-icon">
-        {icon}
-      </div>
+      // <div className="skill-icon">
+        icon
+      // </div>
     )
   }
 }

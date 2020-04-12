@@ -35,7 +35,7 @@ class Profile extends React.Component {
         <div className="container">
           <div className="profile card content">
             <div className="profile-icon">
-              <i className="fas fa-user-graduate"></i>
+              <i className="fas fa-user-graduate fa-6x"></i>
             </div>
             <div className="description">
               <p>こんにちは。マツオ カズヤと申します。<br />
@@ -45,11 +45,6 @@ class Profile extends React.Component {
                 このポートフォリオサイトも学習の一環で作成しました。<br />
                 他の成果物もこのサイトやgithub上で公開しています。
               </p>
-            </div>
-            <div className="links">
-              <h4>Links</h4>
-            </div>
-            <div className="links-item-title">
               <p>GitHub : <a href="https://github.com/kazuya-m" target="_blank" rel="noopener noreferrer">https://github.com/kazuya-m</a></p>
             </div>
           </div>

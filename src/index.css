@@ -1,10 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:150);
+
 html {
   scroll-behavior:smooth;
 }
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -49,6 +51,10 @@ ul {
   box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
 }
 
+a:hover{
+  opacity: 0.6;
+}
+
 /* ヘッダー */
 header {
   height: 65px;
@@ -60,9 +66,6 @@ header {
   z-index: 10;
 }
 
-header a:hover{
-  opacity: 0.6;
-}
 
 .header-left {
   float: left;
@@ -153,9 +156,30 @@ ul#menu {
   text-align: center;
 }
 
-.introduction-wrapper img {
-  width: 200px;
-  height: auto;
+.intro-desc {
+  text-align: left;
+  padding: 20px 100px;
+}
+
+.intro-desc svg {
+  width: 150px;
+  height: 150px;
+  margin: 10px 30px;
+}
+
+.inner {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 auto;
+}
+
+.inner p {
+  display: inline-block;
+}
+
+.intro-icon {
+  text-align: center;
 }
 
 /* aboutmeラッパー */
@@ -198,10 +222,10 @@ ul#aboutme-tab > li:hover {
   opacity: 0.6;
 }
 
-ul#aboutme-tab > .active {
+/* .active {
   border-bottom: solid 1px gray;
   transition: 1s;
-}
+} */
 
 .profile {
   display: flex;
@@ -297,6 +321,10 @@ ul#skill-list > li {
 .skill-icon svg{
   width: 80px;
   height: 80px;
+}
+
+#exp {
+  font-size: 0.8em;
 }
 
 /* worksラッパー */

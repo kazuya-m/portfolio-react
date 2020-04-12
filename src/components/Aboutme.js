@@ -1,31 +1,28 @@
 import React from 'react';
 import Skills from './Skills';
 import Profile from './Profile';
-import {BrowserRouter as Router, Link, Route,} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, NavLink } from "react-router-dom";
 
 class Aboutme extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isProfileActive: true,
-      isSkillsActive: false
-    };
-  }
-  
-  handleProfileClickedTab = () => {
-    if (!this.state.isProfileActive) { 
-      this.setState({isProfileActive: true});
-      this.setState({isSkillsActive: false});
-    }
-  }
+  // constructor(props) {
+  //   // const currentPath = window.location.pathname;
+  //   super(props)
+  //   // this.state = {
+  //   //   pathName: currentPath
+  //   // };
+  // }
 
-  handleClickedSkillsTab = () => {
-    if (!this.state.isSkillsActive) { 
-      this.setState({isProfileActive: false});
-      this.setState({isSkillsActive: true});
-    }
-  }
-    
+  //  handleClickedTab = tabId => {
+  //   console.log('yes');
+  //   const profilePath = "/Aboutme";
+  //   const skillsPath = "/Aboutme/Skills";
+  //   if (tabId === "profile" && this.state.pathName !== profilePath) { 
+  //     this.setState({pathName: {profilePath}});
+  //   } else if (tabId === "skills" && this.state.pathName !== skillsPath) {
+  //     this.setState({pathName: {skillsPath}});      
+  //   }
+  // }
+  
   render() {
     const skillList = [
       {
@@ -89,35 +86,38 @@ class Aboutme extends React.Component {
         exp: '業務経験 / 自己学習',
       },
     ];
+    
+    // const profilePath = "/Aboutme";
+    // const skillsPath = "/Aboutme/Skills";
+    // let profileActive;
+    // let skillsActive;
 
-    let profileActive;
-    let skillsActive;
-    if (this.state.isProfileActive) {
-      profileActive = "active";
-    } else if (this.state.isSkillsActive) {
-      skillsActive = "active";
-    }
-
+    // if (this.state.pathName === {profilePath}) {
+    //   profileActive = "active";
+    // } else if (this.state.pathName === {skillsPath}) {
+    //   skillsActive = "active"
+    // }
 
     return(
       <Router>
         <div className="aboutme-wrapper wrapper">
           <div className="container">
             <div className="heading">
-              <h2>About Me</h2>
-              
+              <h2>About Me</h2>              
             </div>
             <div className="profile-area">
               <ul id="aboutme-tab">
-                <li 
-                  onClick={this.handleProfileClickedTab} 
-                  className={profileActive}>
-                  <Link to='/Aboutme'>Profile</Link>
+                <li
+                  // onClick={() => {this.handleClickedTab("profile")}} 
+                  // className={profileActive}
+                  >
+                  <NavLink to='/Aboutme' activeClassName="active">Profile</NavLink>
                 </li>
                 <li 
-                  onClick={this.handleClickedSkillsTab} 
-                  className={skillsActive}>
-                  <Link to='/Aboutme/Skills'>Skills</Link>
+                  // onClick={() => {this.handleClickedTab("skills")}} 
+                  // className={skillsActive}
+                  >
+                  <NavLink to='/Aboutme/Skills' activeClassName="active">Skills</NavLink>
                 </li>
               </ul>
               <div className="content-area">

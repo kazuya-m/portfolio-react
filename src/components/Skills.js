@@ -5,9 +5,11 @@ class Skills extends React.Component {
   render() {
     let skillCard = this.props.skillList.map(skill =>
       <li key={skill.id}>
-        <Icon id={skill.id} />
+        <div className="skill-icon">
+          <Icon id={skill.id} />
+        </div>
         <p>{skill.name}</p>
-        <p>{skill.exp}</p>
+        <p id="exp">{skill.exp}</p>
       </li>
     );
     console.log(skillCard);
@@ -20,6 +22,5 @@ class Skills extends React.Component {
     );
   }
 }
-
 
 export default Skills;
