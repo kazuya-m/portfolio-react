@@ -36,7 +36,7 @@ class Worksitems extends React.Component {
                 <p>{this.props.skills}</p>
               </div>
               <div className="modal-link">
-                <a href={this.props.url}><p>{this.props.url}</p></a>
+                <a href={this.props.url}>{this.props.url}</a>
               </div>
               <div className="modal-photo align-center">
                 <img src={this.props.img} alt="test" />

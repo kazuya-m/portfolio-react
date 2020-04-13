@@ -343,18 +343,19 @@ ul#skill-list > li {
 .works-item {
   width: 50%;
   margin-bottom: 50px;
+
 }
+
 
 .works-item img {
   max-width: 450px;
   max-height: 250px;
   box-shadow: 0 0 10px #000000;
+  transition: transform 0.2s linear;
 }
 
 .works-cards img:hover {
-  box-shadow: 0 0 20px #000000;
   transform: scale(1.1);
-  transition-duration: 0.3s;
   cursor: pointer;
 }
  
