@@ -9,7 +9,7 @@ class Works extends React.Component {
       {
         id: '01',
         name: 'ポートフォリオ (React + AWS)',
-        description: '自分の経歴やスキルをまとめたポートフォリオサイトです。¥nReactを使用し、環境面はAWSで整備しました。¥nSPA化するためにreact-routerライブラリを使用し、メニューを選択すると差分だけレンダリングするようにしています。',
+        description: '自分の経歴やスキルをまとめたポートフォリオサイトです。\nReactを使用し、環境面はAWSで整備しました。\nSPA化するためにreact-routerライブラリを使用し、メニューを選択すると差分だけレンダリングするようにしています。',
         skills: 'HTML / CSS / React / AWS',
         img: '../img/reactfolio.jpg',
         url: 'https://github.com/kazuya-m/portfolio-react',
@@ -18,7 +18,7 @@ class Works extends React.Component {
       {
         id: '02',
         name: 'ポートフォリオ (jQUery)',
-        description: '自分の経歴やスキルをまとめたポートフォリオサイトです。¥njQueryを使用してモーダルやアコーディオンを実装することで動きのあるサイトにしました。',
+        description: `自分の経歴やスキルをまとめたポートフォリオサイトです。\njQueryを使用してモーダルやアコーディオンを実装することで動きのあるサイトにしました。`,
         skills: 'Skills : HTML / CSS / jQuery',
         img: '../img/portfolio.jpg',
         url: 'https://kazuya-m.github.io/portfolio/',

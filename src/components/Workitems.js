@@ -30,7 +30,7 @@ class Worksitems extends React.Component {
                 <h3>{this.props.name}</h3>
               </div>
               <div className="modal-description">
-                {this.props.description.split('¥n').map(line => (<p>{line}</p>))}
+                {this.props.description.split('\n').map(line => (<p>{line}</p>))}
               </div>
               <div className="modal-skills">
                 <p>{this.props.skills}</p>
