@@ -1,102 +1,28 @@
 import React from 'react';
 import Skills from './Skills';
 import Profile from './Profile';
-import {BrowserRouter as Router, Link, Route, NavLink } from "react-router-dom";
+import {BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 class Aboutme extends React.Component {
-  // constructor(props) {
-  //   // const currentPath = window.location.pathname;
-  //   super(props)
-  //   // this.state = {
-  //   //   pathName: currentPath
-  //   // };
-  // }
-
-  //  handleClickedTab = tabId => {
-  //   console.log('yes');
-  //   const profilePath = "/Aboutme";
-  //   const skillsPath = "/Aboutme/Skills";
-  //   if (tabId === "profile" && this.state.pathName !== profilePath) { 
-  //     this.setState({pathName: {profilePath}});
-  //   } else if (tabId === "skills" && this.state.pathName !== skillsPath) {
-  //     this.setState({pathName: {skillsPath}});      
-  //   }
-  // }
-  
   render() {
-    const skillList = [
-      {
-        id: 'html',
-        name: 'HTML',
-        exp: '業務経験 / 自己学習',
-      },
-      {
-        id: 'css',
-        name: 'CSS',
-        exp: '業務経験 / 自己学習',
-      },
-      {
-        id: 'js',
-        name: 'JavaScript',
-        exp: '業務経験 / 自己学習',
-      },
-      {
-        id: 'react',
-        name: 'React.js',
-        exp: '自己学習',
-      },
-      {
-        id: 'redux',
-        name: 'Redux.js',
-        exp: '自己学習',
-      },
-      {
-        id: 'jquery',
-        name: 'jQuery',
-        exp: '業務経験 / 自己学習',
-      },
-      {
-        id: 'node',
-        name: 'Node.js',
-        exp: '自己学習',
-      },
-      {
-        id: 'aws',
-        name: 'AWS',
-        exp: ' 自己学習',
-      },
-      {
-        id: 'git',
-        name: 'Git',
-        exp: '自己学習',
-      },
-      {
-        id: 'github',
-        name: 'GitHub',
-        exp: '自己学習',
-      },
-      {
-        id: 'svn',
-        name: 'Subversion (CVN)',
-        exp: '業務経験',
-      },
-      {
-        id: 'linux',
-        name: 'Linux',
-        exp: '業務経験 / 自己学習',
-      },
-    ];
-    
-    // const profilePath = "/Aboutme";
-    // const skillsPath = "/Aboutme/Skills";
-    // let profileActive;
-    // let skillsActive;
-
-    // if (this.state.pathName === {profilePath}) {
-    //   profileActive = "active";
-    // } else if (this.state.pathName === {skillsPath}) {
-    //   skillsActive = "active"
-    // }
+    function Skillset (id, name, exp) {
+     [this.id, this.name, this.exp] = [id, name, exp];
+    }
+    const amaExp = "自己学習"
+    const bothExp = "業務経験 / 自己学習";
+    const html = new Skillset("html", "HTML", bothExp);
+    const css = new Skillset("css", "CSS", bothExp);
+    const js = new Skillset("js", "JavaScript", bothExp);
+    const react = new Skillset("react", "React.js", amaExp);
+    const redux = new Skillset("redux", "Redux.js", amaExp);
+    const jquery = new Skillset("jquery", "jQuery", amaExp);
+    const node = new Skillset("node", "node.js", amaExp);
+    const aws = new Skillset("aws", "AWS", amaExp);
+    const git = new Skillset("git", "Git", amaExp);
+    const github = new Skillset("github", "GitHub", amaExp);
+    const svn = new Skillset("svn", "SubVerstion", bothExp);
+    const linux = new Skillset("linux", "Linux", bothExp);
+    const skillList = [html, css, js, react, redux, jquery, node, aws, git, github, svn, linux];
 
     return(
       <Router>

@@ -50,7 +50,7 @@ class Worksitems extends React.Component {
         <div
          className='works-cards'
          onClick={() => {this.handleClickWorks()}}>
-          <img src={this.props.img} alt="a" />
+          <img key={this.props.id} src={this.props.img} alt="a" />
           <p>{this.props.name}</p>
         </div>
         {modal}

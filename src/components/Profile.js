@@ -41,7 +41,7 @@ class Profile extends React.Component {
               <p>こんにちは。マツオ カズヤと申します。<br />
                 Webフロントエンドエンジニアを目指してIT業界に入り、現在4年目の28歳です。<br />
                 主にテスト案件を担当していましたが、2020年からは開発・改修に携わる案件に参画しています。<br />
-                自己学習はモダンフロントエンドを中心に行っており、<a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">フロントエンドロードマップ <i class="fas fa-external-link-alt"></i></a> を参考にしています。<br />
+                自己学習はモダンフロントエンドを中心に行っており、<a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">フロントエンドロードマップ <i className="fas fa-external-link-alt"></i></a> を参考にしています。<br />
                 このポートフォリオサイトも学習の一環で作成しました。<br />
                 他の成果物もこのサイトやgithub上で公開しています。
               </p>
