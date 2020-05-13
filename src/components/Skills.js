@@ -12,7 +12,6 @@ class Skills extends React.Component {
         <p id="exp">{skill.exp}</p>
       </li>
     );
-    console.log(skillCard);
     return(
       <div className="skills content">
       <ul id="skill-list">
