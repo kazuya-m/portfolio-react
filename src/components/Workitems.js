@@ -5,7 +5,7 @@ class Worksitems extends React.Component {
     super(props);
     this.state = {isModalOpen: false};
   }
-  
+
   handleClickWorks(){
     this.setState({isModalOpen: true});
   }
@@ -49,7 +49,7 @@ class Worksitems extends React.Component {
         <div
          className='works-cards'
          onClick={() => {this.handleClickWorks()}}>
-          <img key={this.props.id} src={this.props.img} alt="a" />
+          <img key={this.props.id} src={this.props.img} alt={this.props.name} />
           <p>{this.props.name}</p>
         </div>
         {modal}
