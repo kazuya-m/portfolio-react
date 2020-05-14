@@ -5,6 +5,7 @@ class Worksitems extends React.Component {
     super(props);
     this.state = {isModalOpen: false};
   }
+  
   handleClickWorks(){
     this.setState({isModalOpen: true});
   }
@@ -37,7 +38,7 @@ class Worksitems extends React.Component {
                 <a href={this.props.url}>{this.props.url}</a>
               </div>
               <div className="modal-photo align-center">
-                <img src={this.props.img} alt="test" />
+                <img src={this.props.img} alt={this.props.name} />
               </div>
             </div>
         </div>
