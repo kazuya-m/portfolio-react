@@ -5,17 +5,15 @@ class Worksitems extends React.Component {
     super(props);
     this.state = {isModalOpen: false};
   }
-
   handleClickWorks(){
     this.setState({isModalOpen: true});
-    
   }
 
   handleClickClose(){
     this.setState({isModalOpen: false});
   }
   
-  render(){
+  render() {
     let modal;
     if (this.state.isModalOpen) {
       modal = (
@@ -30,7 +28,7 @@ class Worksitems extends React.Component {
                 <h3>{this.props.name}</h3>
               </div>
               <div className="modal-description">
-                {this.props.description.split('\n').map(line => (<p>{line}</p>))}
+                {this.props.description.split('\n').map((line,ind) => (<p key={ind}>{line}</p>))}
               </div>
               <div className="modal-skills">
                 <p>{this.props.skills}</p>
