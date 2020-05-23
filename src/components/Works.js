@@ -36,7 +36,7 @@ class Works extends React.Component {
                           "",
                           "../img/works-cs.jpg",
                           "",
-                          "false");                              
+                          "false");
     const workList = [reactfolio, portfolio, no3, no4];
 
   return (

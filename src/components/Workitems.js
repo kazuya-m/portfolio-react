@@ -6,12 +6,14 @@ class Worksitems extends React.Component {
     this.state = {isModalOpen: false};
   }
 
-  handleClickWorks(){
+  handleClickWorks = () => {
     this.setState({isModalOpen: true});
+    document.body.style.overflow = 'hidden';
   }
 
-  handleClickClose(){
+  handleClickClose = () => {
     this.setState({isModalOpen: false});
+    document.body.style.overflow = 'auto';
   }
   
   render() {
@@ -22,7 +24,7 @@ class Worksitems extends React.Component {
             <div className="close-modal">
               <i 
                 className="far fa-window-close fa-2x close-btn"
-                onClick={() => {this.handleClickClose()}}></i>
+                onClick={() => {this.handleClickClose()}} />
             </div>
             <div className="modal-box">
               <div className="modal-title align-center">

@@ -97,6 +97,7 @@ class Contact extends React.Component {
                     name="submit-button"
                     id="submit"
                     value="送信(実際には何も送信されません)"
+                    onClick
                     />
                 </li>
               </ul>
