@@ -5,19 +5,29 @@ import { modalOpen, modalClose } from '../actions';
 class Worksitems extends React.Component {
   constructor(props){
     super(props);
-    this.state = {isModalOpen: false};
+    this.state = {isThisModalOpen: false};
   }
 
   render() {
     let modal;
+    const handleClckOpen = () => {
+      this.setState({isThisModalOpen: true});
+      this.props.modalOpen();
+    }
+
+    const handleClickClose = () => {
+      this.setState({isThisModalOpen: false});
+      this.props.modalClose();
+    }
+
     console.log(this.props.isOpen);
-    if (this.props.isOpen) {
+    if (this.props.isOpen && this.state.isThisModalOpen) {
       modal = (
         <div className="modal card" id="portfolio-modal">
             <div className="close-modal">
               <i 
                 className="far fa-window-close fa-2x close-btn"
-                onClick={this.props.modalClose} />
+                onClick={handleClickClose} />
             </div>
             <div className="modal-box">
               <div className="modal-title align-center">
@@ -43,7 +53,7 @@ class Worksitems extends React.Component {
       <div className='works-item'>
         <div
          className='works-cards'
-         onClick={this.props.modalOpen}>
+         onClick={handleClckOpen}>
           <img key={this.props.id} src={this.props.img} alt={this.props.name} />
           <p>{this.props.name}</p>
         </div>

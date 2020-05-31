@@ -8,6 +8,7 @@ import Contact from './Contact';
 
  class Header extends React.Component {
    render() {
+     console.log('header');
     return(
       <Router>
         <header>

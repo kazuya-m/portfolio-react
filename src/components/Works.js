@@ -5,8 +5,8 @@ import Workitems from './Workitems';
 
 class Works extends React.Component {
   render() {
-    function Works (id, name, description, skills, img, url, isOpen) {
-      [this.id, this.name, this.description, this.skills, this.img, this.url, this.isOpen] = [id, name, description, skills, img, url, isOpen];
+    function Works (id, name, description, skills, img, url) {
+      [this.id, this.name, this.description, this.skills, this.img, this.url] = [id, name, description, skills, img, url];
     }
     
     const reactfolio = new Works("01",
@@ -14,30 +14,32 @@ class Works extends React.Component {
                                 "自分の経歴やスキルをまとめたポートフォリオサイトです。\nReactを使用し、環境面はAWSで整備しました。\nSPA化するためにreact-routerライブラリを使用し、メニューを選択すると差分だけレンダリングするようにしています。",
                                 "HTML / CSS / React / AWS",
                                 "../img/reactfolio.jpg",
-                                "https://github.com/kazuya-m/portfolio-react",
-                                "false");
+                                "https://github.com/kazuya-m/portfolio-react"
+                                );
     const portfolio = new Works("02",
-                                "ポートフォリオ (jQUery)",
+                                "ポートフォリオ (jQuery)",
                                 "自分の経歴やスキルをまとめたポートフォリオサイトです。\njQueryを使用してモーダルやアコーディオンを実装することで動きのあるサイトにしました。",
                                 "HTML / CSS / jQuery",
                                 "../img/portfolio.jpg",
-                                "https://kazuya-m.github.io/portfolio/",
-                                "false");
+                                "https://kazuya-m.github.io/portfolio/"
+                                );
     const no3 = new Works("03",
                           "Work in Progress...",
                           "working on it!",
                           "",
                           "../img/works-cs.jpg",
-                          "",
-                          "false");
+                          ""
+                          );
     const no4 = new Works("04",
                           "Work in Progress...",
                           "working on it!",
                           "",
                           "../img/works-cs.jpg",
-                          "",
-                          "false");
-    const workList = [reactfolio, portfolio, no3, no4];
+                          ""
+                          );
+
+  const workList = [reactfolio, portfolio, no3, no4];
+  console.log(workList);
 
   return (
     <div className="works-wrapper wrapper" id="works">
