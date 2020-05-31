@@ -40,8 +40,8 @@ class Works extends React.Component {
     const workList = [reactfolio, portfolio, no3, no4];
 
   return (
-    <div className='works-wrapper wrapper' id="works">
-      <div className='container'>
+    <div className="works-wrapper wrapper" id="works">
+      <div className="container">
         <div className="heading">
           <h2>Works</h2>
         </div>

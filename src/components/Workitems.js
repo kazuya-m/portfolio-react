@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { modalOpen, modalClose } from '../actions';
 
 class Worksitems extends React.Component {
   constructor(props){
@@ -6,25 +8,16 @@ class Worksitems extends React.Component {
     this.state = {isModalOpen: false};
   }
 
-  handleClickWorks = () => {
-    this.setState({isModalOpen: true});
-    document.body.style.overflow = 'hidden';
-  }
-
-  handleClickClose = () => {
-    this.setState({isModalOpen: false});
-    document.body.style.overflow = 'auto';
-  }
-  
   render() {
     let modal;
-    if (this.state.isModalOpen) {
+    console.log(this.props.isOpen);
+    if (this.props.isOpen) {
       modal = (
         <div className="modal card" id="portfolio-modal">
             <div className="close-modal">
               <i 
                 className="far fa-window-close fa-2x close-btn"
-                onClick={() => {this.handleClickClose()}} />
+                onClick={this.props.modalClose} />
             </div>
             <div className="modal-box">
               <div className="modal-title align-center">
@@ -50,7 +43,7 @@ class Worksitems extends React.Component {
       <div className='works-item'>
         <div
          className='works-cards'
-         onClick={() => {this.handleClickWorks()}}>
+         onClick={this.props.modalOpen}>
           <img key={this.props.id} src={this.props.img} alt={this.props.name} />
           <p>{this.props.name}</p>
         </div>
@@ -60,4 +53,10 @@ class Worksitems extends React.Component {
   }
 }
 
-export default Worksitems;
+const mapStateToProps = state => ({ isOpen: state.modal.isOpen })
+const mapDispatchToProps = dispatch => ({
+  modalOpen: () => dispatch(modalOpen()),
+  modalClose: () => dispatch(modalClose())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Worksitems);
