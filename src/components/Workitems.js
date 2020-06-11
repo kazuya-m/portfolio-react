@@ -8,12 +8,10 @@ class Worksitems extends React.Component {
 
   handleClickWorks = () => {
     this.setState({isModalOpen: true});
-    document.body.style.overflow = 'hidden';
   }
 
   handleClickClose = () => {
     this.setState({isModalOpen: false});
-    document.body.style.overflow = 'auto';
   }
   
   render() {
