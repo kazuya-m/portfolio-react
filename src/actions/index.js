@@ -1,3 +1,4 @@
+
 export const MODALOPEN = 'open';
 export const MODALCLOSE = 'close';
 
