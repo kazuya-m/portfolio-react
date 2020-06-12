@@ -9,9 +9,10 @@ import {ReactComponent as Jquery} from '../img/lang/jquery.svg';
 import {ReactComponent as Git} from '../img/lang/git.svg';
 import {ReactComponent as Github} from '../img/lang/github.svg';
 import {ReactComponent as Linux} from '../img/lang/linux.svg';
-import {ReactComponent as Svn} from '../img/lang/svn.svg'
-import {ReactComponent as Typescript} from '../img/lang/typescript.svg'
-import {ReactComponent as Redux} from '../img/lang/redux.svg'
+import {ReactComponent as Svn} from '../img/lang/svn.svg';
+import {ReactComponent as Typescript} from '../img/lang/typescript.svg';
+import {ReactComponent as Redux} from '../img/lang/redux.svg';
+import {ReactComponent as Materialui} from '../img/lang/material-ui.svg';
 
 class Icon extends React.Component {
   render(){ 
@@ -55,6 +56,9 @@ class Icon extends React.Component {
         break;
       case 'redux':
         icon = <Redux />
+        break;
+      case 'materialui':
+        icon = <Materialui />
         break;
       default:
         break;
