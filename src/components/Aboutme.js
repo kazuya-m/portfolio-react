@@ -12,8 +12,10 @@ class Aboutme extends React.Component {
     function Skillset (id, name, exp) {
      [this.id, this.name, this.exp] = [id, name, exp];
     }
+
     const amaExp = "自己学習"
     const bothExp = "業務経験 / 自己学習";
+    
     const html = new Skillset("html", "HTML", bothExp);
     const css = new Skillset("css", "CSS", bothExp);
     const js = new Skillset("js", "JavaScript", bothExp);
@@ -39,9 +41,9 @@ class Aboutme extends React.Component {
               // value={value}
               // onChange={handleChange}
               // indicatorColor="action"
-//              textColor="primary"
+             //color="secondary"
               centered
-              style={style}
+//              style={style}
             >
               <NavLink to='/Aboutme'><Tab label="PROFILE" icon={<Icon>how_to_reg</Icon>}/></NavLink>
               <NavLink to='/Aboutme/Skills'><Tab label="SKILLS" icon={<Icon>playlist_add_check</Icon>}/></NavLink>
@@ -50,7 +52,7 @@ class Aboutme extends React.Component {
                 <Route exact path='/Aboutme' component={Profile} />
                 <Route
                   exact path='/Aboutme/Skills'
-                  render={props => <Skills skillList={skillList} {...props} />}
+                  render={props => <Skills skillList={skillList} />}
                 />
               </div>
             </div>

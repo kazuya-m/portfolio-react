@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:200);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:200); */
 
 html {
   scroll-behavior:smooth;
@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 h2 {
