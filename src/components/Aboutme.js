@@ -3,9 +3,10 @@ import Skills from './Skills';
 import Profile from './Profile';
 
 import {BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import Tabs from '@material-ui/core/Tabs'
-import Tab from '@material-ui/core/Tab'
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 import Icon from '@material-ui/core/Icon';
+import Paper from '@material-ui/core/Paper';
 
 class Aboutme extends React.Component {
   render() {
@@ -37,22 +38,15 @@ class Aboutme extends React.Component {
             <div className="heading">
               <h2>About Me</h2>              
             </div>
-            <Tabs
-              // value={value}
-              // onChange={handleChange}
-              // indicatorColor="action"
-             //color="secondary"
-              centered
-//              style={style}
-            >
-              <NavLink to='/Aboutme'><Tab label="PROFILE" icon={<Icon>how_to_reg</Icon>}/></NavLink>
-              <NavLink to='/Aboutme/Skills'><Tab label="SKILLS" icon={<Icon>playlist_add_check</Icon>}/></NavLink>
-            </Tabs>
+              <Tabs textColor='primary' indicatorColor='primary' centered>
+                <NavLink to='/Aboutme'><Tab label="PROFILE" icon={<Icon>how_to_reg</Icon>}/></NavLink>
+                <NavLink to='/Aboutme/Skills'><Tab label="SKILLS" color="secondary" icon={<Icon>playlist_add_check</Icon>}/></NavLink>
+              </Tabs>
               <div className="content-area">
                 <Route exact path='/Aboutme' component={Profile} />
                 <Route
                   exact path='/Aboutme/Skills'
-                  render={props => <Skills skillList={skillList} />}
+                  render={() => <Skills skillList={skillList} />}
                 />
               </div>
             </div>
@@ -63,7 +57,5 @@ class Aboutme extends React.Component {
   }
 }
 
-const style = {
-  indicatorColor: '#f7f7f7'
-}
+
 export default Aboutme;

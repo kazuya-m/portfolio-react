@@ -3,19 +3,24 @@ import Header from './Header';
 
 import { ThemeProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from "@material-ui/core/styles";
-import { teal } from "@material-ui/core/colors";
 
 class App extends React.Component{
   render() {
-    const theme = createMuiTheme({
+    const theme = createMuiTheme({  // #1
       palette: {
         primary: {
-          main: teal[500]
+          light: '#ffff8b',
+          main: '#ffee58',
+          dark: '#c9bc1f',
+          contrastText: '#000000',
         },
         secondary: {
-          main: "#00bcd4"
-        }
-      }
+          light: '#63a4ff',
+          main: '#1976d2',
+          dark: '#004ba0',
+          contrastText: '#ffffff',
+        },
+      },
     });
     
     return (
