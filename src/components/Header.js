@@ -9,7 +9,7 @@ import Contact from './Contact';
  class Header extends React.Component {
    render() {
     return(
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <header>
           <div className="container">
             <div className="header-left">
