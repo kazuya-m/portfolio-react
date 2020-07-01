@@ -21,7 +21,7 @@
     "preghpages": "yarn build",
     "ghpages": "gh-pages -d build"
   },
-  "homepage": "./",
+  "homepage": "https://kazuya-m.github.io/portfolio-react",
     "eslintConfig": {
       "extends": "react-app"
   },
