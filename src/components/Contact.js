@@ -40,6 +40,7 @@ class Contact extends React.Component {
   render() {
     let emailErrorMsg;
     let textErrorMsg;
+
   　if (this.state.hasEmailError && this.state.hasTextError) {
       emailErrorMsg = (
         <p className="err-msg">正しいメールアドレスを入力してください</p>
