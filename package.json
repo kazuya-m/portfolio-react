@@ -17,11 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "preghpages": "yarn build",
-    "ghpages": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
-  "homepage": "https://kazuya-m.github.io/portfolio-react/",
     "eslintConfig": {
       "extends": "react-app"
   },
